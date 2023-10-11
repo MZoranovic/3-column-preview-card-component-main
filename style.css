@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Inter&family=Lexend+Deca&display=swap');
+
+    body {
+      background-color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 4rem;
+      width: 70%;
+      margin: auto;
+    }
+
+    .bg-orange {
+      background-color: hsl(31, 77%, 52%);
+      padding: 2rem;
+      border-radius: 7px 0 0 7px;
+    }
+
+    .dk-cyan {
+      background-color: hsl(184, 100%, 22%);
+      padding: 2rem;
+    }
+
+    .vr-dk-cyan {
+      background-color: hsl(179, 100%, 13%);
+      padding: 2rem;
+      border-radius: 0 7px 7px 0;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: Lexend Deca;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    h1 {
+      color: hsl(0, 0%, 95%);
+      font-family: Big Shoulders Display;
+    }
+
+    button {
+      background-color: hsl(0, 0%, 95%);
+      width: 60%;
+      border-radius: 30px;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 60px;
+      margin-inline: auto;
+      font-size: 15px;
+      border-style: none;
+      font-family: Lexend Deca;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background-color: transparent;
+      border: 1px solid hsl(0, 0%, 95%);
+    }
+
+    .orange-button {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .vr-dk-cyan-button {
+      color: hsl(179, 100%, 13%);
+    }
+
+    .dk-cyan-button {
+      color: hsl(179, 100%, 13%);
+    }
+
+    .orange-button:hover, .vr-dk-cyan-button:hover, .dk-cyan-button:hover{
+      color: hsla(0, 0%, 100%, 0.75);
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+      main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 1rem;
+        width: 80%;
+      }
+
+      .bg-orange{
+        border-radius: 7px 7px 0 0;
+      }
+
+      .vr-dk-cyan{
+        border-radius: 0 0 7px 7px;
+      }
+    }
+
+  
